@@ -106,7 +106,7 @@ int confronta_media(struct studente s1, struct studente s2){
         somma_voti1 += s1.lista_voti[i];
     media1 = (float) (somma_voti1)/NVOTI;
     
-    for (int i=0;  < NVOTI; i++)
+    for (int i=0; i < NVOTI; i++)
         somma_voti2 += s2.lista_voti[i];
     media2 = (float) (somma_voti2)/NVOTI;
     
