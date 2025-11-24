@@ -65,7 +65,7 @@ int main(int argc, char** argv) {
     }
     
     printf("Inserisci voti secondo studente:\n");
-    for(int i=0; i<NVOTI; i++){
+    for(int i=0; i < NVOTI; i++){
         printf("voto %d:", i+1);
         scanf("%d", &s2.lista_voti[i]);
     }
@@ -102,7 +102,7 @@ int confronta_media(struct studente s1, struct studente s2){
     
     float media1, media2;
     
-    for (int i=0; i < NVOTI; i++)
+    for (int i = 0; i < NVOTI; i++)
         somma_voti1 += s1.lista_voti[i];
     media1 = (float) (somma_voti1)/NVOTI;
     
@@ -119,7 +119,7 @@ int confronta_media(struct studente s1, struct studente s2){
 }
 
 bool sono_omonimi(struct studente s1, struct studente s2){
-    if(strcmp(s1.nome, s2.nome)==0)
+    if(strcmp(s1.nome, s2.nome) == 0)
         return true;
     else
         return false;
